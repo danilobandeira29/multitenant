@@ -1,1 +1,1 @@
-module multitenant
+module github.com/danilobandeira29/multitenant
