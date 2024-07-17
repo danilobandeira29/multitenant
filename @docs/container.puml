@@ -1,0 +1,18 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/main/icons/font-awesome-6/golang.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/main/icons/font-awesome-6/book.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/main/icons/devicons/react.puml
+
+AddRelTag("stream", $lineStyle = DashedLine())
+
+Container(browser, "Browser", "HTML/CSS/Javascript")
+
+System_Boundary(multitenancy_system, "Multi-Tenancy System") {
+    Container(multitenancy_api, "Server-Side Application", "Golang + Templates", $sprite="golang", "Serves HTML Templates")
+    Container(user_controller, "User Controller", "Component", "Allows users to view user's products and actions for product")
+    Rel(multitenancy_api, user_controller, "Makes call to", "In-Memory Call")
+}
+Rel(browser, multitenancy_api, "See products using", "HTTPS")
+Rel(browser, multitenancy_api, "See actions for product using", "HTTPS")
+@enduml
