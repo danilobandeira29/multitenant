@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User {{ .User.Id }}</title>
+</head>
+<body>
+    <h1>Products</h1>
+    {{ if not .User.Products }}
+        <p>Products not found</p>
+    {{ end }}
+    <ul>
+        {{ range .User.Products }}
+            <a href="/users/{{ $.User.Id }}/product/{{ . }}">
+                <li>{{ . }}</li>
+            </a>
+        {{ end }}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{{ define "users_table" }}
+    {{ range .Users}}
+    <a href="/users/{{.ID}}">
+        <p>
+            {{ .ID }}, {{ .Name }}
+        </p>
+    </a>
+    {{ end }}
+{{ end }}

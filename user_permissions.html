@@ -1,0 +1,8 @@
+{{ define "user_permissions" }}
+    {{ range .Permissions }}
+        <button style="padding: 10px; border: none; background-color:  {{ $.Style.Colors.ButtonBg }}; color: black">{{ . }}</button>
+    {{ end }}
+    {{ if not .Permissions  }}
+        <p>Permissions not found</p>
+    {{ end }}
+{{ end }}
