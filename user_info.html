@@ -11,7 +11,7 @@
     {{ end }}
     <ul>
         {{ range .User.Products }}
-            <a href="/users/{{ $.User.Id }}/product/{{ . }}">
+            <a href="/users/{{ $.User.Id }}/products/{{ . }}">
                 <li>{{ . }}</li>
             </a>
         {{ end }}

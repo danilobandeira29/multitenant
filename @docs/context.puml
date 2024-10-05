@@ -3,9 +3,13 @@
 
 title "Multi-Tenancy"
 
-Person(user, "User", "Person who buys one or many products")
-System(multitenancy, "Multi Tenancy System", "Platform that contains all products for user to buy and watch content")
+Person(user, "User", "Person who has one or many subscriptions for different products")
+System(multitenancy, "Multi Tenancy System", "Platform that contains all products for user to buy and watch videos")
+System_Ext(multitenancy_db_product1, "Product1 Database", "Database for storage videos, etc.")
+System_Ext(multitenancy_db_product2, "Product2 Database", "Database for storage videos, etc.")
 
-Rel(user, multitenancy, "See products using")
-Rel(user, multitenancy, "See actions in product using")
+Rel(user, multitenancy, "Watch product's video using")
+Rel(user, multitenancy, "Download product's video using")
+Rel(multitenancy, multitenancy_db_product1, "Download product's video using")
+Rel(multitenancy, multitenancy_db_product2, "Download product's video using")
 @enduml

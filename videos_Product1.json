@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Basic Video 1 Product1",
+    "url": "https://example.com/video1",
+    "thumbnail": "https://example.com/img1.jpg",
+    "type": "basic"
+  },
+  {
+    "title": "Basic Video 2 Product1",
+    "url": "https://example.com/video2",
+    "thumbnail": "https://example.com/img2.jpg",
+    "type": "basic"
+  },
+  {
+    "title": "Basic Video 3 Product1",
+    "url": "https://example.com/video3",
+    "thumbnail": "https://example.com/img3.jpg",
+    "type": "basic"
+  },
+  {
+    "title": "Premium Video 1 Product1",
+    "url": "https://example.com/video6",
+    "thumbnail": "https://example.com/img6.jpg",
+    "type": "premium"
+  },
+  {
+    "title": "Premium Video 2 Product1",
+    "url": "https://example.com/video7",
+    "thumbnail": "https://example.com/img7.jpg",
+    "type": "premium"
+  },
+  {
+    "title": "Premium Video 3 Product1",
+    "url": "https://example.com/video8",
+    "thumbnail": "https://example.com/img8.jpg",
+    "type": "premium"
+  },
+  {
+    "title": "Premium Video 4 Product1",
+    "url": "https://example.com/video9",
+    "thumbnail": "https://example.com/img9.jpg",
+    "type": "premium"
+  },
+  {
+    "title": "Premium Video 5 Product1",
+    "url": "https://example.com/video10",
+    "thumbnail": "https://example.com/img10.jpg",
+    "type": "premium"
+  }
+]
